@@ -33,15 +33,15 @@ function Randomizer() {
   return (
     <React.Fragment>
       {isLoading ? (
-        <p>Loading...</p>
+        <p className='loading-info'>Loading...</p>
       ) : (
         <div>
-          <h1>{quote}</h1>
-          <h2>{anime}</h2>
-          <h3>{character}</h3>
+          <h1 className='quote-paragraph'>{quote}</h1>
+          <h2 className='anime-paragraph'>{anime}</h2>
+          <h3 className='character-paragraph'>{character}</h3>
         </div>
       )}
-      <button onClick={handleButtonClick}>Get Quote</button>
+      <button className='get-quote-btn' onClick={handleButtonClick}>Get Quote</button>
     </React.Fragment>
   );
 }
